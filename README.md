@@ -47,15 +47,6 @@ To provide web developers a quick base to develop their websites from and save t
 -> SQLite (Go to the DbConnectorSQLite.cs to change the database to a different one.)
 
 
-
-**Coding language used:**
-
--> C#
-
--> JavaScript
-
-
-
 **Code libraries/NuGet packages used:**
 
 -> Microsoft.VisualStudio.Web.CodeGeneration.Design
