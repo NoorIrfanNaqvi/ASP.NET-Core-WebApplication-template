@@ -1,0 +1,83 @@
+:root {
+    /* Light theme colors */
+    --text-color: #000000;
+    --bg-color: white;
+    --hrBar-color: #000000;
+    --link-color: #000000;
+    --accent-text-color: #FCA311;
+    --accent-bg-color: #f7f7f7;
+    --border-color: #acacac;
+    --border-themetoggle-color: white;
+}
+.dark-mode { /* Dark theme colors */
+    --text-color: white;
+    --bg-color: #000000;
+    --hrBar-color: white;
+    --link-color: white;
+    --accent-text-color: #38fff3;
+    --accent-bg-color: #14213d;
+    --border-color: #4b565e;
+    --border-themetoggle-color: white;
+}
+
+html {
+    font-size: 14px;
+    color-scheme: light dark;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin-bottom: 60px;
+}
+
+/*classable colors [Dark and light mode compatible]*/
+.text-linkcolor:hover {
+    color: var(--link-color);
+}
+.text-accent {
+    color: var(--accent-text-color);
+}
+.bg-accent {
+    background-color: var(--accent-bg-color);
+}
+
+.text-adaptive {
+    color: var(--text-color);
+}
+.bg-adaptive {
+    background-color: var(--bg-color);
+}
+
+/*Border and rim side colors [Dark and light mode compatible]*/
+.border-theme-toggler {
+    border-color: var(--border-themetoggle-color);
+}
+.border-adaptive {
+    border-color: var(--border-color);
+}
+
+/*Rim sides in order of side border colors [Dark and light mode compatible]*/
+.border-left-adaptive {
+    border-left: 3rem solid var(--text-color);
+}
+
+.border-left-accent {
+    border-left: 3rem solid var(--accent-text-color);
+}
