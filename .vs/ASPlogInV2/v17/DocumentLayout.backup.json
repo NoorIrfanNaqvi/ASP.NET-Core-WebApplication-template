@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|c:\\users\\irfan\\desktop\\visualstudiofiles\\projectsforbusinessgithub\\asp.net-core-webapplication-template\\asploginv2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|solutionrelative:asploginv2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|c:\\users\\irfan\\desktop\\visualstudiofiles\\projectsforbusinessgithub\\asp.net-core-webapplication-template\\asploginv2\\models\\dbconnectorsqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|solutionrelative:asploginv2\\models\\dbconnectorsqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|c:\\users\\irfan\\desktop\\visualstudiofiles\\projectsforbusinessgithub\\asp.net-core-webapplication-template\\asploginv2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|solutionrelative:asploginv2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|c:\\users\\irfan\\desktop\\visualstudiofiles\\projectsforbusinessgithub\\asp.net-core-webapplication-template\\asploginv2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -17,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|c:\\users\\irfan\\desktop\\visualstudiofiles\\projectsforbusinessgithub\\asp.net-core-webapplication-template\\asploginv2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|solutionrelative:asploginv2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|c:\\users\\irfan\\desktop\\visualstudiofiles\\projectsforbusinessgithub\\asp.net-core-webapplication-template\\asploginv2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|solutionrelative:asploginv2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|c:\\users\\irfan\\desktop\\visualstudiofiles\\projectsforbusinessgithub\\asp.net-core-webapplication-template\\asploginv2\\models\\dbconnectorsqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|solutionrelative:asploginv2\\models\\dbconnectorsqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,46 +34,61 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "ASPlogInV2\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\wwwroot\\css\\site.css",
               "RelativeToolTip": "ASPlogInV2\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-10-06T13:59:42.954Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ASPlogInV2\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ASPlogInV2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAOBvwEwAAACBAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-06T13:59:24.66Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASPlogInV2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ASPlogInV2\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAADYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-07T14:01:33.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "ASPlogInV2\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Controllers\\HomeController.cs",
               "RelativeToolTip": "ASPlogInV2\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAiwJ0AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAiwIwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-06T14:00:41.766Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "DbConnectorSQLite.cs",
               "DocumentMoniker": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Models\\DbConnectorSQLite.cs",
               "RelativeDocumentMoniker": "ASPlogInV2\\Models\\DbConnectorSQLite.cs",
@@ -77,7 +96,8 @@
               "RelativeToolTip": "ASPlogInV2\\Models\\DbConnectorSQLite.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T21:20:45.746Z"
+              "WhenOpened": "2026-01-02T21:20:45.746Z",
+              "EditorCaption": ""
             }
           ]
         }

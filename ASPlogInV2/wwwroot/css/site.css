@@ -1,21 +1,19 @@
 :root {
     /* Light theme colors */
     --text-color: #000000;
-    --bg-color: white;
+    --bg-color: #335D61;
     --hrBar-color: #000000;
     --link-color: #000000;
-    --accent-text-color: #FCA311;
-    --accent-bg-color: #f7f7f7;
+    --accent-bg-color: #ffffff;
     --border-color: #acacac;
     --border-themetoggle-color: white;
 }
 .dark-mode { /* Dark theme colors */
-    --text-color: white;
-    --bg-color: #000000;
+    --text-color: #ffffff;
+    --bg-color: #14213d;
     --hrBar-color: white;
     --link-color: white;
-    --accent-text-color: #38fff3;
-    --accent-bg-color: #14213d;
+    --accent-bg-color: #000000;
     --border-color: #4b565e;
     --border-themetoggle-color: white;
 }
@@ -50,9 +48,6 @@ body {
 /*classable colors [Dark and light mode compatible]*/
 .text-linkcolor:hover {
     color: var(--link-color);
-}
-.text-accent {
-    color: var(--accent-text-color);
 }
 .bg-accent {
     background-color: var(--accent-bg-color);

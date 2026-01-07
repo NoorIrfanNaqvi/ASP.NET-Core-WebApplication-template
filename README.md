@@ -36,6 +36,12 @@ To provide web developers a quick base to develop their websites from and save t
 
 
 
+**How to run this template (In visual studio):**
+
+-> If visual studio is installed, run the 'ASPlogInV2.sln' file. Then in the top bar there should be a green arrow play head, clicking it should allow you to run the template localy.
+
+
+
 **Frame work used:**
 
 -> ASP.NET CORE, using .NET 8.

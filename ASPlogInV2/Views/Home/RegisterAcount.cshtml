@@ -29,7 +29,7 @@
 <section class="container mt-3 mt-lg-4">
     <div class="row">
         <div class="col">
-            <div class="card bg-accent text-accent border-adaptive py-4">
+            <div class="card bg-accent text-adaptive border-adaptive py-4">
                 <div class="card-body">
                     <h3 class="card-title text-center">Sign Up</h3>
                     <form method="post" asp-action="RegisterAcount" asp-controller="Home">
@@ -37,28 +37,28 @@
                         <div class="row">
                             <div class="col-md-6 mx-auto">
                                 <small>Username:</small>
-                                <input asp-for="useremail" type="text" placeholder="Enter email..." class="form-control bg-adaptive text-adaptive border-adaptive" />
+                                <input asp-for="useremail" type="text" placeholder="Enter email..." class="form-control border-adaptive" />
                             </div>
                         </div>
                         <!-- Username -->
                         <div class="row">
                             <div class="col-md-6 mx-auto">
                                 <small>Username:</small>
-                                <input asp-for="username" type="text" placeholder="Enter username..." class="form-control bg-adaptive text-adaptive border-adaptive" />
+                                <input asp-for="username" type="text" placeholder="Enter username..." class="form-control border-adaptive" />
                             </div>
                         </div>
                         <!-- Password -->
                         <div class="row mt-2">
                             <div class="col-md-6 mx-auto">
                                 <small>Password:</small>
-                                <input asp-for="password" type="password" placeholder="Enter password..." class="form-control bg-adaptive text-adaptive border-adaptive" />
+                                <input asp-for="password" type="password" placeholder="Enter password..." class="form-control border-adaptive" />
                             </div>
                         </div>
                         <!-- Confirm Password -->
                         <div class="row mt-2">
                             <div class="col-md-6 mx-auto">
                                 <small>Confirm Password:</small>
-                                <input asp-for="confirmpassword" type="password" placeholder="Confirm password..." class="form-control bg-adaptive text-adaptive border-adaptive" />
+                                <input asp-for="confirmpassword" type="password" placeholder="Confirm password..." class="form-control border-adaptive" />
                             </div>
                         </div>
                         <!-- Already have an account? -->
@@ -79,7 +79,7 @@
                         <!-- Sighn in button -->
                         <div class="row text-center mt-1">
                             <div class="col">
-                                <button class="btn btn-lg bg-adaptive text-accent border-adaptive" type="submit">Log In</button>
+                                <button class="btn btn-lg text-accent border-adaptive" type="submit">Log In</button>
                             </div>
                         </div>
                     </form>
