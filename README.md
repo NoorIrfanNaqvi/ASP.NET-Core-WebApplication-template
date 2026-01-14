@@ -30,11 +30,11 @@ To provide web developers a quick base to develop their websites from and save t
 -> If visual studio is installed, run the 'ASPlogInV2.sln' file.
 
 -> Then in the right side, open the 'Model' folder, click 'DbConnectorSQLite.cs' then in line 8 inside "(@"data source=C:\\SQLiteDb.db")" Replace the inside of the bracket like this "(@"data source=C:\\\[filepath]\\SQLiteDb.db")".
-![WhichLineInDbConnectorSQLite.csToChange](https://raw.githubusercontent.com/NoorIrfanNaqvi/ASP.NET-Core-WebApplication-template/main/docs/img/DBdataSource.png)
+![WhichLineInDbConnectorSQLite.csToChange](docs/img/DBdataSource.png)
 
 *(Tip in your file explorer, click the right corner of the bar to the left of the search bar before copying the file path so you can past it in the 'DbConnectorSQLite.cs')*
 *(Black bars to redact personal information.)*
-![CopyFilepathFromFileExplorer](https://raw.githubusercontent.com/NoorIrfanNaqvi/ASP.NET-Core-WebApplication-template/main/docs/img/HowToCopyFilePath.png)
+![CopyFilepathFromFileExplorer](docs/img/HowToCopyFilePath.png)
 
 
 **Frame work used:**
