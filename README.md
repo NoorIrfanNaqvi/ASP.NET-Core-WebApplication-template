@@ -42,13 +42,15 @@ To provide web developers a quick base to develop their websites from and save t
 
 -> Then in the right side, open the 'Model' folder, click 'DbConnectorSQLite.cs' then in line 8 inside "(@"data source=C:\\SQLiteDb.db")" Replace the inside of the bracket like this "(@"data source=C:\\\[filepath]\\SQLiteDb.db")".
 
-!\[Which line in DbConnectorSQLite.cs to change](docs/imgs/DBdataSource.png)
+!\[WhichLineInDbConnectorSQLite.csToChange](docs/imgs/DBdataSource.png)
 
 
 
 *(Tip in your file explorer, click the right corner of the bar to the left of the search bar before copying the file path so you can past it in the 'DbConnectorSQLite.cs')*
 
 *(Black bars to redact personal information.)*
+
+
 
 !\[CopyFilepathFromFileExplorer](docs/imgs/HowToCopyFilePath.png)
 
