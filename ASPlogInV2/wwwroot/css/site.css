@@ -74,5 +74,5 @@ body {
 }
 
 .border-left-accent {
-    border-left: 3rem solid var(--accent-text-color);
+    border-left: 3rem solid var(--bg-color);
 }

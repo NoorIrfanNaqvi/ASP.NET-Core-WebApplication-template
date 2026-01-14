@@ -135,6 +135,7 @@ namespace ASPlogInV2.Controllers
 
             return View(AccountEmail);
         }
+
         [HttpPost]
         [Route("ResetPassword")]
         public IActionResult ChangePasswordPage(CheckRegistrationData userDetails)

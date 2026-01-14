@@ -30,15 +30,27 @@ To provide web developers a quick base to develop their websites from and save t
 
 
 
-**Walk through of template:**
+**Video walk through of template:**
 
 \[N/A]
 
 
 
-**How to run this template (In visual studio):**
+**How to run this template (In visual studio and using SQLite):**
 
--> If visual studio is installed, run the 'ASPlogInV2.sln' file. Then in the top bar there should be a green arrow play head, clicking it should allow you to run the template localy.
+-> If visual studio is installed, run the 'ASPlogInV2.sln' file.
+
+-> Then in the right side, open the 'Model' folder, click 'DbConnectorSQLite.cs' then in line 8 inside "(@"data source=C:\\SQLiteDb.db")" Replace the inside of the bracket like this "(@"data source=C:\\\[filepath]\\SQLiteDb.db")".
+
+!\[Which line in DbConnectorSQLite.cs to change](docs/imgs/DBdataSource.png)
+
+
+
+*(Tip in your file explorer, click the right corner of the bar to the left of the search bar before copying the file path so you can past it in the 'DbConnectorSQLite.cs')*
+
+*(Black bars to redact personal information.)*
+
+!\[CopyFilepathFromFileExplorer](docs/imgs/HowToCopyFilePath.png)
 
 
 
@@ -51,6 +63,7 @@ To provide web developers a quick base to develop their websites from and save t
 **Database used:**
 
 -> SQLite (Go to the DbConnectorSQLite.cs to change the database to a different one.)
+
 
 
 **Code libraries/NuGet packages used:**

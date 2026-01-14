@@ -7,55 +7,10 @@
     <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ASPlogInV2.styles.css" asp-append-version="true" />
-
-    <!-- The JavaScript code to toggle light and dark mode -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const toggleBtn = document.getElementById("dark-toggle");
-            const toggleBtnIcon = toggleBtn.querySelector(".toggler-icon");
-
-            //Setting the user theme setting based on local storage from browser
-            const savedTheme = localStorage.getItem('theme');
-            const systemIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-            let isDarkMode = savedTheme ? savedTheme == 'dark' : systemIsDark;
-
-            function applyTheme(darkMode) {
-                //Removes the light and dark modes so it doesn't accidentally add both at same time or two of the same.
-                document.documentElement.classList.remove('light-mode', 'dark-mode');
-
-                //If darkMode is selected
-                if (darkMode) {
-                    document.documentElement.classList.add('dark-mode');
-                    toggleBtnIcon.textContent = '🌙';
-                    toggleBtn.setAttribute('aria-label', 'Switch to light mode');
-                }
-                //If lightMode is selected
-                else {
-                    document.documentElement.classList.add('light-mode');
-                    toggleBtnIcon.textContent = '🔆';
-                    toggleBtn.setAttribute('aria-label', 'switch to dark mode');
-                }
-                //Sets local storage to the updated user prefered theme type
-                isDarkMode = darkMode;
-                localStorage.setItem('theme', darkMode ? 'dark' : 'light');
-            }
-
-            //Button function when button is clicked
-            function changeTheme() {
-                applyTheme(!isDarkMode);
-            }
-
-            //Sets the theme when program starts
-            applyTheme(isDarkMode);
-
-            //Event listener, allows code to actually detect if user clicked toggle or not
-            toggleBtn.addEventListener('click', changeTheme);
-        });
-    </script>
 </head>
 <body>
     <header>
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-accent border-bottom border-adaptive mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand text-linkcolor" href="@Url.Action("Index", "Home")">ASPlogInV2</a>
@@ -63,6 +18,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Collapseable navbar items (Hidden unless opened in smaller screens) -->
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
@@ -75,10 +31,10 @@
                 </div>
                 <!-- Dark/light mode toggle-->
                 <button id="dark-toggle" class="border-theme-toggler rounded-circle"><span class="toggler-icon">⚫</span></button>
-
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -86,11 +42,14 @@
     </div>
 
     <footer class="border-top footer bg-accent text-adaptive">
-        <!-- If footer desired, input footer here. -->
+        <!-- If footer desired, input footer content here. -->
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!--vvv The JavaScript code to toggle light and dark mode vvv-->
+    <script src="~/js/light_dark_theme_toggle.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
