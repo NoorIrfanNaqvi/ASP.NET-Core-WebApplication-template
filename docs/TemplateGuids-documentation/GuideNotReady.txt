@@ -1,0 +1,1 @@
+Sorry the guide is not ready yet, this is a place holder so that the docs folder will be read as a separate folder by GitHub. Apologises, eventually this folder will contain a .PDF guide.
