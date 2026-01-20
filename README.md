@@ -12,11 +12,15 @@ To provide web developers a quick base to develop their websites from and save t
 
 -> Forgot password \& change password pages
 
+-> Privacy page
+
 -> Dashboard page (With only the session of the user's username in the top right corner.)
 
 **Features:**
 
 -> Dark and light theme toggle on the navbar
+
+-> Ability to detect admin users from normal users.
 
 -> Comments in the code to make it clear what each function does and to make the code more maintainable by any developer. And for future edits.
 

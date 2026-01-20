@@ -8,22 +8,24 @@ namespace ASPlogInV2.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        //Session constants
-        private const string UsernameSession = "_Username"; //For user session
-        private const string ChangeEmailPasswordSession = "_Useremail"; //For when the user needs to change their password
-
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
-        //LOGIN PAGE
-        [Route ("")]
-        [Route ("LogIn")]
+        //Landing page
         public IActionResult Index()
         {
-            var newModel = new CheckRegistrationData()
-            { useremail = "", username = "", password = "", confirmpassword = "", agreedToTerms = false };
+            return View();
+        }
+
+        //LOGIN PAGE (Uncomment the [Route("")] if you want the website to skip the Index page.)
+        //[Route ("")]
+        [Route ("LogIn")]
+        public IActionResult LoginPage()
+        {
+            var newModel = new userAccounts()
+            { UserEmail = "", UserName = "", Password = "", isAdmin = false };
             ViewBag.ErrorMessage = string.Empty;
             return View(newModel);
         }
@@ -31,14 +33,24 @@ namespace ASPlogInV2.Controllers
         [HttpPost]
         [Route("")]
         [Route("LogIn")]
-        public IActionResult Index(CheckRegistrationData LogInDetails)
+        public IActionResult LoginPage(userAccounts LogInDetails)
         {
             //Checks if the account exsists and if the user placed in the correct password
-            string MessageOfError = Helpers.LogInHelper.isAccountExsit(LogInDetails.username, LogInDetails.password);
+            string MessageOfError = Helpers.LogInHelper.isAccountExsit(LogInDetails.UserName, LogInDetails.Password);
             if (MessageOfError == "" || MessageOfError == null)
             {
-                HttpContext.Session.SetString(UsernameSession, LogInDetails.username);
-                return RedirectToAction("Dashboard", "Home");
+                HttpContext.Session.SetString("UsernameSession", LogInDetails.UserName);
+                //Check if user is an admin or not
+                if (LogInDetails.isAdmin)
+                {
+                    //If user admin, send user to admin dashboard
+                    return RedirectToAction("DashboardPage", "AdminUser");
+                }
+                else
+                {
+                    //If user is NOT admin, send user to user dashboard.
+                    return RedirectToAction("DashboardPage", "User");
+                }
             }
             else 
             {
@@ -49,7 +61,7 @@ namespace ASPlogInV2.Controllers
 
         //Register page
         [Route ("SignUp")]
-        public IActionResult RegisterAcount()
+        public IActionResult RegisterAcountPage()
         {
             var newModel = new CheckRegistrationData()
             {useremail="", username="", password="", confirmpassword="",agreedToTerms= false};
@@ -59,7 +71,7 @@ namespace ASPlogInV2.Controllers
 
         [HttpPost]
         [Route("SignUp")]
-        public IActionResult RegisterAcount(CheckRegistrationData NewAccount)
+        public IActionResult RegisterAcountPage(CheckRegistrationData NewAccount)
         {
             if (NewAccount.agreedToTerms == false) 
             {
@@ -73,8 +85,8 @@ namespace ASPlogInV2.Controllers
                 string ErrorMessage = Helpers.RegistorAccountHelper.validatingAccountCreation(NewAccount);
                 if (ErrorMessage == "" || ErrorMessage == null)
                 {
-                    HttpContext.Session.SetString(UsernameSession, NewAccount.username);
-                    return RedirectToAction("Dashboard", "Home");
+                    HttpContext.Session.SetString("UsernameSession", NewAccount.username);
+                    return RedirectToAction("DashboardPage", "User");
                 }
                 else
                 {
@@ -113,7 +125,7 @@ namespace ASPlogInV2.Controllers
             //If email is valid
             else
             {
-                HttpContext.Session.SetString(ChangeEmailPasswordSession, email.useremail);
+                HttpContext.Session.SetString("ChangeEmailPasswordSession", email.useremail);
                 return RedirectToAction("ChangePasswordPage", "Home");
             }
         }
@@ -123,13 +135,13 @@ namespace ASPlogInV2.Controllers
         public IActionResult ChangePasswordPage()
         {
             //Send user back to forgot password page if the email somehow gets missing
-            if (HttpContext.Session.GetString(ChangeEmailPasswordSession) == null || HttpContext.Session.GetString(ChangeEmailPasswordSession) == "")
+            if (HttpContext.Session.GetString("ChangeEmailPasswordSession") == null || HttpContext.Session.GetString("ChangeEmailPasswordSession") == "")
             {
                 return RedirectToAction("ForgotPasswordPage", "Home");
             }
 
             //If session has stored the email in the changeEmailPasswordSession, grab email for View
-            var Email = HttpContext.Session.GetString(ChangeEmailPasswordSession);
+            var Email = HttpContext.Session.GetString("ChangeEmailPasswordSession");
             //Make the email in a format the ChangePasswordPage will accept. (CheckRegistrationData model)
             CheckRegistrationData AccountEmail = new CheckRegistrationData() {useremail = Email};
 
@@ -141,19 +153,19 @@ namespace ASPlogInV2.Controllers
         public IActionResult ChangePasswordPage(CheckRegistrationData userDetails)
         {
             //Send user back to forgot password page if the email somehow gets missing
-            if (HttpContext.Session.GetString(ChangeEmailPasswordSession) == null || HttpContext.Session.GetString(ChangeEmailPasswordSession) == "")
+            if (HttpContext.Session.GetString("ChangeEmailPasswordSession") == null || HttpContext.Session.GetString("ChangeEmailPasswordSession") == "")
             {
                 return RedirectToAction("ForgotPasswordPage", "Home");
             }
 
             //Make sure the email is in the userDetails
-            string AccountEmail = HttpContext.Session.GetString(ChangeEmailPasswordSession);
+            string AccountEmail = HttpContext.Session.GetString("ChangeEmailPasswordSession");
             userDetails.useremail = AccountEmail;
             //If password change is valid
             string ErrorMsg = Helpers.ChangePasswordHelper.changeUserPassword(AccountEmail, userDetails.password, userDetails.confirmpassword);
             if (ErrorMsg == "")
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("LoginPage", "Home");
             }
             //If fields were not valid
             else
@@ -163,18 +175,7 @@ namespace ASPlogInV2.Controllers
             }
         }
 
-        //Dashboard
-        public IActionResult Dashboard()
-        {
-            ViewBag.SessionUsername = HttpContext.Session.GetString(UsernameSession);
-            if (HttpContext.Session.GetString(UsernameSession) == null || HttpContext.Session.GetString(UsernameSession) == "")
-            {
-                return RedirectToAction("Index", "Home");
-            }
-            return View();
-        }
-
-        public IActionResult Privacy()
+        public IActionResult PrivacyPage()
         {
             return View();
         }

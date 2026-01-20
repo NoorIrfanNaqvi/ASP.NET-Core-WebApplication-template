@@ -36,7 +36,8 @@ namespace ASPlogInV2.Helpers
                     {
                         UserEmail = email,
                         UserName = username,
-                        Password = hashedPassword
+                        Password = hashedPassword,
+                        isAdmin = false
                     };
 
                     db.UserAccounts.Add(NewAccount);

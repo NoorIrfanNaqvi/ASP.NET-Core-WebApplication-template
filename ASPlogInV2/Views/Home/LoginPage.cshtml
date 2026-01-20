@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var ErrorMessage = ViewBag.ErrorMessage;
+}
+
+@model ASPlogInV2.Models.CheckRegistrationData
+
+@{
+    string ShowDiv = "";
+    if (ErrorMessage == null || ErrorMessage == "")
+    {
+        //If there is no error message
+        ShowDiv = "fade";
+    }
+    else
+    {
+        //If there is a error message
+        ShowDiv = "show";
+    }
+
+    //Will show the user if something went wrong or not.
+    <div class="alert alert-danger alert-dismissible @ShowDiv" role="alert">
+        <p>Error: @ErrorMessage</p>
+        <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<section class="container mt-3 mt-lg-4">
+    <div class="row">
+        <div class="col">
+            <div class="card bg-accent text-adaptive border-adaptive py-4">
+                <div class="card-body">
+                    <h3 class="card-title text-center">LOG IN</h3>
+                    <form method="post" asp-action="Index" asp-controller="Home">
+                        <!-- Username -->
+                        <div class="row">
+                            <div class="col-md-6 mx-auto">
+                                <small>Username:</small>
+                                <input asp-for="username" type="text" placeholder="Enter username..." class="form-control border-adaptive" />
+                            </div>
+                        </div>
+                        <!-- Password -->
+                        <div class="row mt-2">
+                            <div class="col-md-6 mx-auto">
+                                <small>Password:</small>
+                                <input asp-for="password" type="password" placeholder="Enter password..." class="form-control border-adaptive" />
+                                <a href="@Url.Action("ForgetPasswordPage", "Home")" class="text-linkcolor text-opacity-50">Forgot password?</a>
+                            </div>
+                        </div>
+                        <!-- Sighn in button -->
+                        <div class="row text-center mt-3">
+                            <div class="col">
+                                <a href="@Url.Action("RegisterAcountPage", "Home")" class="text-center text-linkcolor text-opacity-50 text-decoration-none">Don't have an account?</a>
+                            </div>
+                        </div>
+                        <div class="row text-center mt-1">
+                            <div class="col">
+                                <button class="btn btn-lg text-adaptive border-adaptive" type="submit">Log In</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

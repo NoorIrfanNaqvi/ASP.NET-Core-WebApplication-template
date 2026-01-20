@@ -1,21 +1,21 @@
 :root {
     /* Light theme colors */
-    --text-color: #000000;
-    --bg-color: #335D61;
-    --hrBar-color: #000000;
-    --link-color: #000000;
-    --accent-bg-color: #ffffff;
-    --border-color: #acacac;
-    --border-themetoggle-color: white;
+    --text-color: #000000 !important;
+    --bg-color: #335D61 !important;
+    --hrBar-color: #000000 !important;
+    --link-color: #000000 !important;
+    --accent-bg-color: #ffffff !important;
+    --border-color: #acacac !important;
+    --border-themetoggle-color: white !important;
 }
 .dark-mode { /* Dark theme colors */
-    --text-color: #ffffff;
-    --bg-color: #14213d;
-    --hrBar-color: white;
-    --link-color: white;
-    --accent-bg-color: #000000;
-    --border-color: #4b565e;
-    --border-themetoggle-color: white;
+    --text-color: #ffffff !important;
+    --bg-color: #14213d !important;
+    --hrBar-color: white !important;
+    --link-color: white !important;
+    --accent-bg-color: #000000 !important;
+    --border-color: #4b565e !important;
+    --border-themetoggle-color: white !important;
 }
 
 html {
@@ -36,7 +36,7 @@ html {
 .btn-link.nav-link:focus,
 .form-control:focus,
 .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb !important;
 }
 
 body {
