@@ -36,7 +36,7 @@
                         <!-- Email -->
                         <div class="row">
                             <div class="col-md-6 mx-auto">
-                                <small>Username:</small>
+                                <small>Email address:</small>
                                 <input asp-for="useremail" type="text" placeholder="Enter email..." class="form-control border-adaptive" />
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                             <div class="col">
                                 <div class="input-group d-flex justify-content-center">
                                     <input asp-for="agreedToTerms" class="form-check-input text-adaptive" type="checkbox"/>
-                                    <small class="ms-1">I agree to all <a href="@Url.Action("Privacy", "Home")">terms and conditions</a></small>
+                                    <small class="ms-1">I agree to all <a href="@Url.Action("PrivacyPage", "Home")">terms and conditions</a></small>
                                 </div>
                             </div>
                         </div>
