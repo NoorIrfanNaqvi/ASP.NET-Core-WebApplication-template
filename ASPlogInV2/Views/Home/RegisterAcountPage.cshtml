@@ -36,7 +36,7 @@
                         <!-- Email -->
                         <div class="row">
                             <div class="col-md-6 mx-auto">
-                                <small>Username:</small>
+                                <small>Email:</small>
                                 <input asp-for="useremail" type="text" placeholder="Enter email..." class="form-control border-adaptive" />
                             </div>
                         </div>
@@ -51,6 +51,7 @@
                         <div class="row mt-2">
                             <div class="col-md-6 mx-auto">
                                 <small>Password:</small>
+                                <small class=" text-sm-start"><i>(Minumum 8 characters long, one digit and one uppercase and lowercase letters)</i></small>
                                 <input asp-for="password" type="password" placeholder="Enter password..." class="form-control border-adaptive" />
                             </div>
                         </div>
@@ -64,7 +65,7 @@
                         <!-- Already have an account? -->
                         <div class="row text-center mt-3">
                             <div class="col">
-                                <a href="@Url.Action("Index", "Home")" class="text-center text-linkcolor text-opacity-50 text-decoration-none">Already have an account?</a>
+                                <a href="@Url.Action("LoginPage", "Home")" class="text-center text-linkcolor text-opacity-50 text-decoration-none">Already have an account?</a>
                             </div>
                         </div>
                         <!-- Agree to terms checkbox -->
@@ -79,7 +80,7 @@
                         <!-- Sighn in button -->
                         <div class="row text-center mt-1">
                             <div class="col">
-                                <button class="btn btn-lg text-adaptive border-adaptive" type="submit">Log In</button>
+                                <button class="btn btn-lg text-adaptive border-adaptive" type="submit">Sign Up</button>
                             </div>
                         </div>
                     </form>

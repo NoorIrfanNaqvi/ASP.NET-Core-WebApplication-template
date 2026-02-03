@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|c:\\users\\irfan\\desktop\\visualstudiofiles\\projectsforbusinessgithub\\asp.net-core-webapplication-template\\asploginv2\\views\\home\\registeracountpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|solutionrelative:asploginv2\\views\\home\\registeracountpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|c:\\users\\irfan\\desktop\\visualstudiofiles\\projectsforbusinessgithub\\asp.net-core-webapplication-template\\asploginv2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|solutionrelative:asploginv2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|c:\\users\\irfan\\desktop\\visualstudiofiles\\projectsforbusinessgithub\\asp.net-core-webapplication-template\\asploginv2\\views\\home\\loginpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|solutionrelative:asploginv2\\views\\home\\loginpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DB04350-A763-40C8-829A-1C454C9AE3B5}|ASPlogInV2\\ASPlogInV2.csproj|c:\\users\\irfan\\desktop\\visualstudiofiles\\projectsforbusinessgithub\\asp.net-core-webapplication-template\\asploginv2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -26,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "ASPlogInV2\\wwwroot\\css\\site.css",
@@ -39,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ASPlogInV2\\Views\\Shared\\_Layout.cshtml",
@@ -48,18 +56,43 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-06T13:59:24.66Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RegisterAcountPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Views\\Home\\RegisterAcountPage.cshtml",
+              "RelativeDocumentMoniker": "ASPlogInV2\\Views\\Home\\RegisterAcountPage.cshtml",
+              "ToolTip": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Views\\Home\\RegisterAcountPage.cshtml",
+              "RelativeToolTip": "ASPlogInV2\\Views\\Home\\RegisterAcountPage.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T09:03:29.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Views\\Home\\LoginPage.cshtml",
+              "RelativeDocumentMoniker": "ASPlogInV2\\Views\\Home\\LoginPage.cshtml",
+              "ToolTip": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Views\\Home\\LoginPage.cshtml",
+              "RelativeToolTip": "ASPlogInV2\\Views\\Home\\LoginPage.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAowD0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T09:03:13.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "ASPlogInV2\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\irfan\\Desktop\\VisualStudioFiles\\ProjectsForBusinessGithub\\ASP.NET-Core-WebApplication-template\\ASPlogInV2\\Controllers\\HomeController.cs",
               "RelativeToolTip": "ASPlogInV2\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAIAwwLEAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAawFgAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-20T13:29:57.857Z",
               "EditorCaption": ""

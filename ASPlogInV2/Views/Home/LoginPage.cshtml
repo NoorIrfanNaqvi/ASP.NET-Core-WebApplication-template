@@ -3,7 +3,7 @@
     var ErrorMessage = ViewBag.ErrorMessage;
 }
 
-@model ASPlogInV2.Models.CheckRegistrationData
+@model ASPlogInV2.Models.userAccounts
 
 @{
     string ShowDiv = "";
@@ -36,14 +36,14 @@
                         <div class="row">
                             <div class="col-md-6 mx-auto">
                                 <small>Username:</small>
-                                <input asp-for="username" type="text" placeholder="Enter username..." class="form-control border-adaptive" />
+                                <input asp-for="UserName" type="text" placeholder="Enter username..." class="form-control border-adaptive" />
                             </div>
                         </div>
                         <!-- Password -->
                         <div class="row mt-2">
                             <div class="col-md-6 mx-auto">
                                 <small>Password:</small>
-                                <input asp-for="password" type="password" placeholder="Enter password..." class="form-control border-adaptive" />
+                                <input asp-for="Password" type="password" placeholder="Enter password..." class="form-control border-adaptive" />
                                 <a href="@Url.Action("ForgetPasswordPage", "Home")" class="text-linkcolor text-opacity-50">Forgot password?</a>
                             </div>
                         </div>
