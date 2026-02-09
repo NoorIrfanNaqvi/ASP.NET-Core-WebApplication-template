@@ -2,7 +2,7 @@
 
 namespace ASPlogInV2.Models
 {
-    public class userAccounts
+    public class UserAccounts
     {
         public string UserEmail { get; set; }
         [Key]

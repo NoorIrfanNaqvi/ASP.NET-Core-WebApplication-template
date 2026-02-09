@@ -1,5 +1,5 @@
 # ASP.NET Core Web Application template
-ASP.Net core using .net 8, I believe.
+ASP.Net core using .net 8.
 
 **Project purpose:**
 To provide web developers a quick base to develop their websites from and save time from having to create the common things among most websites, so they can give more time to the more unique features for their website.

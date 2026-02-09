@@ -32,7 +32,7 @@ namespace ASPlogInV2.Helpers
                     //Hash password
                     var hashedPassword = BCrypt.HashPassword(password);
                     //Creating a new account details into a table row to be added into the database
-                    userAccounts NewAccount = new userAccounts()
+                    UserAccounts NewAccount = new UserAccounts()
                     {
                         UserEmail = email,
                         UserName = username,

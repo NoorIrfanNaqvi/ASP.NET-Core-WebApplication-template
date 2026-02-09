@@ -11,6 +11,6 @@ namespace ASPlogInV2.Models
         //Replace the '[filepath]' with the actual file location to store the database, or replace it with MS SQL instead.
 
         //Database tables go here vvv
-        public DbSet<userAccounts> UserAccounts { get; set; }
+        public DbSet<UserAccounts> UserAccounts { get; set; }
     }
 }

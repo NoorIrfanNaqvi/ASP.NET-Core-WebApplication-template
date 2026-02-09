@@ -24,7 +24,7 @@ namespace ASPlogInV2.Controllers
         [Route ("LogIn")]
         public IActionResult LoginPage()
         {
-            var newModel = new userAccounts()
+            var newModel = new UserAccounts()
             { UserEmail = "", UserName = "", Password = "", isAdmin = false };
             ViewBag.ErrorMessage = string.Empty;
             return View(newModel);
@@ -33,7 +33,7 @@ namespace ASPlogInV2.Controllers
         [HttpPost]
         [Route("")]
         [Route("LogIn")]
-        public IActionResult LoginPage(userAccounts LogInDetails)
+        public IActionResult LoginPage(UserAccounts LogInDetails)
         {
             //Checks if the account exsists and if the user placed in the correct password
             string MessageOfError = Helpers.LogInHelper.isAccountExsit(LogInDetails.UserName, LogInDetails.Password);

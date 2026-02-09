@@ -4,7 +4,7 @@ namespace ASPlogInV2.Controllers
 {
     public class UserController : Controller
     {
-        //Dashboard
+        //Dashboard page
         [Route("Dashboard")]
         public IActionResult DashboardPage()
         {
